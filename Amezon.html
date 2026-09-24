@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f3f3f3;
+        }
+
+        /* Navbar */
+        nav {
+            background: #131921;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        .search {
+            flex: 1;
+            display: flex;
+        }
+
+        .search input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .search button {
+            padding: 12px 20px;
+            border: none;
+            background: #febd69;
+            cursor: pointer;
+        }
+
+        /* Product */
+        .product {
+            background: white;
+            width: 90%;
+            margin: 40px auto;
+            padding: 30px;
+            display: flex;
+            gap: 50px;
+        }
+
+        .product-image {
+            width: 45%;
+            text-align: center;
+        }
+
+        .product-image img {
+            width: 400px;
+            max-width: 100%;
+        }
+
+        .product-info {
+            width: 55%;
+        }
+
+        .product-info h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .rating {
+            color: #e47911;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 30px;
+            color: #b12704;
+            margin: 15px 0;
+        }
+
+        .offer {
+            color: #007600;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .buy {
+            display: flex;
+            gap: 15px;
+        }
+
+        .cart,
+        .buy-now {
+            padding: 14px 25px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cart {
+            background: #ffd814;
+        }
+
+        .buy-now {
+            background: #ffa41c;
+        }
+
+        .cart:hover,
+        .buy-now:hover {
+            opacity: 0.8;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .product {
+                flex-direction: column;
+            }
+
+            .product-image,
+            .product-info {
+                width: 100%;
+            }
+
+            nav {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">amazon</div>
+
+        <div class="search">
+            <input type="text" placeholder="Search Amazon">
+            <button>🔍</button>
+        </div>
+
+        <div>🛒 Cart</div>
+    </nav>
+
+
+    <!-- Product -->
+    <div class="product">
+
+        <!-- Product Image -->
+        <div class="product-image">
+            <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                alt="Smart Watch">
+        </div>
+
+
+        <!-- Product Details -->
+        <div class="product-info">
+
+            <h1>
+                Smart Watch for Men and Women
+            </h1>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ 4.5 (2,345 ratings)
+            </div>
+
+            <hr>
+
+            <div class="price">
+                ₹2,999
+            </div>
+
+            <div class="offer">
+                In stock
+            </div>
+
+            <p class="description">
+                Smart watch with fitness tracking, heart rate monitoring,
+                Bluetooth calling, notifications and long battery life.
+            </p>
+
+            <p>
+                <b>Delivery:</b> FREE delivery Tomorrow
+            </p>
+
+            <br>
+
+            <div class="buy">
+                <button class="cart">
+                    🛒 Add to Cart
+                </button>
+
+                <button class="buy-now">
+                    Buy Now
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
